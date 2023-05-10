@@ -4,7 +4,7 @@
       "name": "sfs-da",
       "label": "Secure file storage as deployable architecture",
       "product_kind": "solution",
-      "version": "1.0.0",
+      "version": "0.9.1",
       "tags": [
         "tutorial",
         "Technology"
@@ -21,6 +21,7 @@
           "label": "Standard",
           "name": "sfs-da",
           "install_type": "fullstack",
+          "working_directory": "terraform",
           "configuration": [
             {
               "key": "prefix",
