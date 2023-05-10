@@ -1,0 +1,80 @@
+{
+  "products": [
+    {
+      "name": "sfs-da",
+      "label": "Secure file storage as deployable architecture",
+      "product_kind": "solution",
+      "version": "1.0.0",
+      "tags": [
+        "tutorial",
+        "Technology"
+      ],
+      "keywords": [
+        "security"
+      ],
+      "short_description": "The e2e security tutorial as deployable architecture",
+      "long_description": "The e2e security tutorial discusses a secure file storage app. Here, it can be instantiated as deployable architecture.",
+      "offering_docs_url": "https://raw.githubusercontent.com/data-henrik/secure-file-storage/master/README.md",
+      "support_details": "This is a demonstration and no official support is given.",
+      "flavors": [
+        {
+          "label": "Standard",
+          "name": "sfs-da",
+          "install_type": "fullstack",
+          "configuration": [
+            {
+              "key": "prefix",
+              "required": false
+            }
+          ],
+          "outputs": [
+            {
+              "key": "vpc_id"
+            }
+          ],
+          "compliance": {
+            "authority": "scc-v3",
+            "controls": [
+              {
+                "profile": {
+                  "name": "IBM Cloud Security Best Practices",
+                  "version": "1.1.0"
+                },
+                "names": [
+                  "4.39"
+                ]
+              }
+            ]
+          },
+          "iam_permissions": [
+            {
+              "service_name": "iam-groups",
+              "role_crns": [
+                "crn:v1:bluemix:public:iam::::role:Administrator"
+              ]
+            },
+            {
+              "service_name": "is.vpc",
+              "role_crns": [
+                "crn:v1:bluemix:public:iam::::role:Administrator"
+              ]
+            }
+          ],
+          "release_notes_url": "https://raw.githubusercontent.com/data-henrik/secure-file-storage/master/README.md",
+          "architecture": {
+            "diagrams": [
+              {
+                "diagram": {
+                  "caption": "Architecture diagram",
+                  "url": "https://raw.githubusercontent.com/data-henrik/secure-file-storage/master/Architecture.svg",
+                  "metadata": []
+                },
+                "description": "A secure file storage solution."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
