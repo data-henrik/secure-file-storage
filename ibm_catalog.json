@@ -4,7 +4,7 @@
       "name": "sfs-da",
       "label": "Secure file storage as deployable architecture",
       "product_kind": "solution",
-      "version": "0.9.1",
+      "version": "0.9.3",
       "tags": [
         "tutorial",
         "Technology"
@@ -24,13 +24,12 @@
           "working_directory": "terraform",
           "configuration": [
             {
-              "key": "prefix",
-              "required": false
-            }
-          ],
-          "outputs": [
+              "key": "toolchain_apikey",
+              "required": true
+            },
             {
-              "key": "vpc_id"
+              "key": "toolchain_registry_namespace",
+              "required": true
             }
           ],
           "compliance": {
